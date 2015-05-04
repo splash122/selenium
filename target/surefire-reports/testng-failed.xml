@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Tests]" data-provider-thread-count="1">
+  <parameter name="path" value="/"/>
+  <test name="Test1(failed)">
+    <parameter name="path" value="/"/>
+    <classes>
+      <class name="ru.st.selenium.Addfilm">
+        <methods>
+          <include name="tearDown"/>
+          <include name="testAddfilm"/>
+        </methods>
+      </class> <!-- ru.st.selenium.Addfilm -->
+      <class name="ru.st.selenium.RemoveFilm">
+        <methods>
+          <include name="testRemoveFilm"/>
+        </methods>
+      </class> <!-- ru.st.selenium.RemoveFilm -->
+      <class name="ru.st.selenium.Login">
+        <methods>
+          <include name="init"/>
+          <include name="testLogin"/>
+        </methods>
+      </class> <!-- ru.st.selenium.Login -->
+      <class name="ru.st.selenium.Logout">
+        <methods>
+          <include name="testLogout"/>
+        </methods>
+      </class> <!-- ru.st.selenium.Logout -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [Tests] -->
